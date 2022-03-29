@@ -7,32 +7,115 @@
     <title>Colors RGB Hexadecimal</title>
     <link rel="stylesheet" href="css/master.css">
     <style>
-        .red {
-            color: #FF0000 ;
-            font-size: 1.2rem;
-            font-weight: bold;
+        section div.row{
+            margin: 0 auto;
+            width: 100%;
         }
-        .green{
-            color: #00FF00;
-            font-size: 1.2rem;
-            font-weight: bold;
+        section div div {
+            background-color: silver;
+            color: black;
+            display: inline-block;
+            font-weight: 500;
+            margin-left: -5px;
+            text-align: center;
+            line-height: 5rem;
+            height: 80px;
+            width: 20%;
+            transition: all 0.5s ease-in;
         }
-        .blue{
-            color: #0000FF;
-            font-size: 1.2rem;
-            font-weight: bold;
+        section div div:first-child{
+            margin-left: 0;
         }
+        section div div:first-child,
+        section div div:last-child {
+            color: rgb(100%, 100%, 100%);
+        }
+
+        section div div:hover {
+            transform: scale(2);
+        }
+
+        /* First row */
+        .maroon {background-color: #800000;} 
+        .red {background-color: #ff0000;} 
+        .orange {background-color: #ffa600;} 
+        .yellow {background-color: #ffff00;} 
+        .olive {background-color: #474700;} 
+
+        /* Second row */
+        .purple {background-color: #800080;} 
+        .fuchsia {background-color: #ff00ff;} 
+        .white {background-color: #ffffff;} 
+        .lime {background-color: #00ff00;} 
+        .green {background-color: #008000;} 
+
+        /* Third row */
+        section div.row.row3 { 
+            width: 80%;
+        }
+        section div.row.row3 div { 
+            width: 25%;
+        }
+        .navy {background-color: #000080;} 
+        .blue {background-color: #0000ff;} 
+        .aqua {background-color: #00ffff;} 
+        .teal {background-color: #008080;} 
+
+         /* Fourth row */
+         section div.row.row4 { 
+             width: 60%;
+            }
+        section div.row.row4 div { 
+             width: 33.33%;
+            }
+        .black {background-color: #000000;} 
+        .silver {background-color: #bfbfbf;} 
+        .gray {background-color: #808080;} 
+
+
     </style>
+        
 </head>
 <body>
     <main>
         <header>
             <h1><a href="index.html"> 🏡 </a> Colors RGB Hexadecimal</h1>
         </header>
+
         <section>
-            <p class="red">R is for RED #FF0000</p>
-            <p class="green">G is for GREEN #00FF00;</p>
-            <p class="blue">B is for BLUE #0000FF</p>
+            <!-- First row -->
+                <div class="row row1">
+                    <div class="maroon">#800000</div>
+                    <div class="red">#ff0000</div>
+                    <div class="orange">#ffa600</div>
+                    <div class="yellow">#ffff00</div>
+                    <div class="olive">#474700</div>
+                </div>
+
+                 <!-- Second row -->
+                <div class="row row2">
+                    <div class="purple">#800080</div>
+                    <div class="fuchsia">#ff00ff</div>
+                    <div class="white">#ffffff</div>
+                    <div class="lime">#00ff00</div>
+                    <div class="green">#008000</div>
+                </div>
+
+                <!-- Third row -->
+                  <div class="row row3">
+                    <div class="navy">#000080</div>
+                    <div class="blue">#0000ff</div>
+                    <div class="aqua">#00ffff</div>
+                    <div class="teal">#008080;</div>
+                </div>
+           
+                 <!-- Fourth row -->
+                 <div class="row row4">
+                    <div class="black">#000000</div>
+                    <div class="silver">#bfbfbf</div>
+                    <div class="gray">#808080</div>
+
+                </div>
 
         </section>
     </main>
