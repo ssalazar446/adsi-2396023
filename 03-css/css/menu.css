@@ -2,6 +2,7 @@
 body {
 background: url(../images/bg.jpg) no-repeat center;
 background-size: cover;
+background-attachment: fixed;
 font-family: 'Poppins', sans-serif;
 font-weight: 200;
 min-height: 100vh;
