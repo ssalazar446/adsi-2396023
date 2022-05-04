@@ -21,21 +21,7 @@
         figure#runner.sprite6 { background-position: -1280px  0;  }
     </style>
 
-    <script>
-        const sp = document.getElementById('runner')
-        var ct = 1
-        const ns = 6
-        const si = setInterval(() => {
-            console.log(ct)
-            sp.className = ''
-            sp.classList.add('sprite' + ct)
-            if (ct == ns) {
-                ct = 1
-            } else {
-                ct++
-            }
-        }, 500)
-    </script>
+  
 </head>
 <body>
     <main>
@@ -46,6 +32,22 @@
             <figure id="runner" class="sprite1"></figure>
         </section>
     </main>
+
+    <script>
+        const sp = document.getElementById('runner')
+        var ct = 1
+        const ns = 6
+        const si = setInterval(() => {
+            console.log(ct)
+            sp.className = ''
+            sp.classList.add('sprite'+ ct)
+            if (ct == ns) {
+                ct = 1
+            } else {
+                ct++
+            }
+        }, 50)
+    </script>
     
 </body>
 </html>
