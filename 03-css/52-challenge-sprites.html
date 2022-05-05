@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Sprites</title>
+    <style>
+        body {
+            background-color: #17a053;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 200;
+        }
+
+        main {
+            margin: 2rem auto;
+            width: 80%;
+            
+        }
+
+       header {
+           background-image: url(images/spriteweb.png);
+            background-position: -11px -430px;
+            height: 120px;
+            margin: 2rem auto;
+            width: 180px;
+         
+        }
+      
+        .header, .footer {
+           
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+
+        }
+
+        nav p {
+            border-style: solid;
+            border-width: 0px 0px 5px 0px;
+            background-color: #00000075;
+            border-bottom-color: #fff;
+            display: inline-block;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+            margin-right: 20px;
+    
+        }
+
+        nav p:hover {
+            background-color: #000000aa;
+           border-width: 0px 0px 5px 0px;
+            border-bottom-color: #fad000;
+        }
+
+        .sprites {
+            background-color: #104d2a;
+            padding: 30px;
+            margin: 0 auto;
+            height: 250px;
+            width: 60% auto;
+        }
+
+        .box {
+            border: 2px solid #fff;
+            display: inline-block;
+            background-image: url(images/spriteweb.png);
+            background-position: -510px -7px;
+            height: 200px;
+            margin: 0 auto;
+            margin-right: 25px;
+            width: 250px;
+        }
+
+        .text1{
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #000000;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin: auto;
+            background-color: #fffdfd80;
+        }
+
+        .text1:hover{
+            background-color: #fffdfdaa;
+            cursor: pointer;
+        }
+
+        
+        .lorem {
+            
+            background-color: #fff;
+            color: #000000;
+            border: 2px solid #fff;
+            padding: 12px;
+            
+             
+        
+        }
+
+        footer {
+           background-image: url(images/spriteweb.png);
+            background-position: -490px -420px;
+            height: 180px;
+            margin: 2rem auto;
+            width: 250px;
+         
+        }
+
+        .footer {
+            color: #000000;
+       
+        }
+        
+      .bottom {
+            background-color: #fff;
+            height: 250px;
+            width: 60% auto;
+         
+        }
+
+        .middle{
+            margin-top: 30px;
+
+            background-color: #104d2a;
+            padding: 10px;
+            height: 250px;
+            width: 60% auto;
+        }
+        
+
+    </style>
+
+</head>
+<body>
+   <main>
+      <header></header>
+        <nav class="header">
+            <p>INICIO</p>
+            <p>NOSOTROS</p>
+            <p>PORTAFOLIO</p>
+            <p>SERVICIO</p>
+            <p>CONTACTO</p>
+        </nav>
+
+        <section>
+            <div class="sprites">
+                <div class="box"><div class="text1"> Sprite 01</div></div>
+                <div class="box"><div class="text1">Sprite 02</div></div>
+                <div class="box"><div class="text1">Sprite 03</div></div>
+             </div>
+
+        </section>
+  
+        <section class="middle">
+            <div class="content">
+                <div class="left"><p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut deserunt atque placeat dolores omnis iusto facere, voluptatem asperiores perferendis aperiam fugit laboriosam dignissimos odio doloribus blanditiis minima et vero nesciunt veritatis eos! Beatae aut aliquam nesciunt inventore sit quidem debitis?</p></div>
+                <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut deserunt atque placeat dolores omnis iusto facere, voluptatem asperiores perferendis aperiam fugit laboriosam dignissimos odio doloribus blanditiis minima et vero nesciunt veritatis eos! Beatae aut aliquam nesciunt inventore sit quidem debitis?</p>
+                <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut deserunt atque placeat dolores omnis iusto facere, voluptatem asperiores perferendis aperiam fugit laboriosam dignissimos odio doloribus blanditiis minima et vero nesciunt veritatis eos! Beatae aut aliquam nesciunt inventore sit quidem debitis?</p>
+             </div>
+
+        </section>
+      
+        <section class="bottom">
+        <footer>
+            <div>
+               <!-- <nav class="footer"></nav>
+                    <p>INICIO</p>
+                    <p>NOSOTROS</p>
+                    <p>PORTAFOLIO</p>
+                    <p>SERVICIO</p>
+                    <p>CONTACTO</p>
+      -->
+            </div>
+            
+        </footer> 
+       </section>
+       
+       
+
+    </main>
+    
+</body>
+</html>
