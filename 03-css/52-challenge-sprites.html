@@ -93,15 +93,34 @@
             cursor: pointer;
         }
 
+
+
+        section.middle article {
+			background-color: #fff;
+			margin: 10px auto;
+			height: 180px;
+			position: relative;
+		}
         
-        .lorem {
-            
-            background-color: #fff;
-            color: #000000;
-            border: 2px solid #fff;
-            padding: 12px;
-            
-             
+        .imageLeft {
+            background-image: url(images/spriteweb.png);
+            background-position: -280px -490px;
+			height: 100px;
+			position: absolute;
+			margin-top: 25px;
+			margin-left: 20px;
+			width: 120px;
+        
+        }
+
+        .imageRight {
+            background-image: url(images/spriteweb.png);
+            background-position: -10px -220px;
+			height: 150px;
+			position: absolute;
+			margin-top: -50px;
+			margin-left: 780px;
+			width: 200px;
         
         }
 
@@ -114,9 +133,31 @@
          
         }
 
-        .footer {
+        .lorem1{
             color: #000000;
-       
+            text-align: center;
+        }
+
+        .lorem1:hover{
+            color:#17a053;
+            cursor: pointer;
+        }
+
+        menu p {
+            border-bottom: 7px solid #fff;
+			color: #000000;
+			display: inline-block;
+			padding: 8px;
+			margin: 0px 10px;
+			text-align: center;
+			width: 120px;
+        }
+
+        menu p:hover{
+            cursor: pointer;
+            border-width: 0px 0px 5px 0px;
+            border-bottom-color: #17a053;
+
         }
         
       .bottom {
@@ -160,24 +201,26 @@
         </section>
   
         <section class="middle">
-            <div class="content">
-                <div class="left"><p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut deserunt atque placeat dolores omnis iusto facere, voluptatem asperiores perferendis aperiam fugit laboriosam dignissimos odio doloribus blanditiis minima et vero nesciunt veritatis eos! Beatae aut aliquam nesciunt inventore sit quidem debitis?</p></div>
-                <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut deserunt atque placeat dolores omnis iusto facere, voluptatem asperiores perferendis aperiam fugit laboriosam dignissimos odio doloribus blanditiis minima et vero nesciunt veritatis eos! Beatae aut aliquam nesciunt inventore sit quidem debitis?</p>
-                <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut deserunt atque placeat dolores omnis iusto facere, voluptatem asperiores perferendis aperiam fugit laboriosam dignissimos odio doloribus blanditiis minima et vero nesciunt veritatis eos! Beatae aut aliquam nesciunt inventore sit quidem debitis?</p>
-             </div>
+            <article>
+				<div class="imageLeft"></div>
+                    <p class=" lorem1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam libero numquam illo quod asperiores optio tempore, sed, sint nemo labore, molestiae est hic similique dicta velit qui tempora corporis autem facilis odio. Dolorum possimus earum ipsa sit facilis eveniet eos.
+                    </p>
+				<div class="imageRight"></div>
+			</article>
 
         </section>
       
         <section class="bottom">
         <footer>
             <div>
-               <!-- <nav class="footer"></nav>
+               <menu class="footer">
                     <p>INICIO</p>
                     <p>NOSOTROS</p>
                     <p>PORTAFOLIO</p>
                     <p>SERVICIO</p>
                     <p>CONTACTO</p>
-      -->
+                </menu>
             </div>
             
         </footer> 
