@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge Sprites</title>
     <style>
+        html{
+             border: 8px solid #fff;
+            min-height: 100%;
+        }
+
         body {
             background-color: #17a053;
             color: #fff;
@@ -15,7 +20,8 @@
 
         main {
             margin: 2rem auto;
-            width: 80%;
+            width: 60%;
+            border: 2px solid #fff;
             
         }
 
@@ -58,21 +64,30 @@
             border-bottom-color: #fad000;
         }
 
-        .sprites {
+        .sprites { 
             background-color: #104d2a;
             padding: 30px;
             margin: 0 auto;
             height: 250px;
-            width: 60% auto;
+            width: 70% auto;
         }
 
+        .ejemplo {
+            
+            margin: 15px 8% 40px;
+            display: inline-block;
+            height: 220px;
+            width: 90%;
+        }
+
+        
         .box {
+            align-items: center;
             border: 2px solid #fff;
             display: inline-block;
             background-image: url(images/spriteweb.png);
             background-position: -510px -7px;
             height: 200px;
-            margin: 0 auto;
             margin-right: 25px;
             width: 250px;
         }
@@ -116,10 +131,11 @@
         .imageRight {
             background-image: url(images/spriteweb.png);
             background-position: -10px -220px;
+            position: absolute;
+            top: 55px;
 			height: 150px;
-			position: absolute;
 			margin-top: -50px;
-			margin-left: 780px;
+			margin-left: 835px;
 			width: 200px;
         
         }
@@ -134,8 +150,12 @@
         }
 
         .lorem1{
+            border: 2px solid #666;
             color: #000000;
             text-align: center;
+            margin: 25px 18% 25px;
+            height: 150px;
+            width: 50%;
         }
 
         .lorem1:hover{
@@ -169,11 +189,15 @@
 
         .middle{
             margin-top: 30px;
-
             background-color: #104d2a;
             padding: 10px;
             height: 250px;
             width: 60% auto;
+        }
+
+        .footer p{
+            margin-top: 80%;
+           
         }
         
 
@@ -193,9 +217,17 @@
 
         <section>
             <div class="sprites">
-                <div class="box"><div class="text1"> Sprite 01</div></div>
-                <div class="box"><div class="text1">Sprite 02</div></div>
-                <div class="box"><div class="text1">Sprite 03</div></div>
+                <div class="ejemplo">
+                    <div class="box">
+                        <div class="text1"> Sprite 01</div>
+                    </div>
+                    <div class="box">
+                        <div class="text1">Sprite 02</div>
+                    </div>
+                    <div class="box">
+                        <div class="text1">Sprite 03</div>
+                    </div>
+                </div>
              </div>
 
         </section>
@@ -204,7 +236,9 @@
             <article>
 				<div class="imageLeft"></div>
                     <p class=" lorem1">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam libero numquam illo quod asperiores optio tempore, sed, sint nemo labore, molestiae est hic similique dicta velit qui tempora corporis autem facilis odio. Dolorum possimus earum ipsa sit facilis eveniet eos.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam libero numquam illo quod asperiores optio tempore, sed, sint nemo labore, molestiae
+                        est hic similique dicta velit qui tempora corporis autem facilis odio. Dolorum possimus earum ipsa sit facilis eveniet eos.
+                        
                     </p>
 				<div class="imageRight"></div>
 			</article>
