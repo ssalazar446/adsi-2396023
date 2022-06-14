@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge Responsive</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+        *{
+            transition: all 0.5s ease;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
         header {
             /*border: 2px solid #666;*/
             background-image: url(images/title.png.opdownload);
@@ -16,8 +24,14 @@
             
         }
 
+        nav {
+            border: 2px solid blue;
+            width: 55%;
+            margin: 0 auto;
+            padding: 10px 0px;
+        }
         section div.figure1{
-            margin-top: 15px;
+          
             border: 2px solid #666;
             background-image: url(images/tanjiro.png.opdownload);
             background-size: cover;
@@ -27,9 +41,9 @@
         }
 
         section div.figure2{
-            margin-top: 15px;
+            
             border: 2px solid #666;
-            background-image: url(images/nezuko.png);
+            background-image: url(images/nezuko.jpg);
             background-size: cover;
             display: inline-block;
             height: 240px;
@@ -37,7 +51,7 @@
         }
 
         section div.figure3{
-            margin-top: 15px;
+            
             border: 2px solid #666;
             background-image: url(images/uzui.png);
             background-size: cover;
@@ -47,7 +61,7 @@
         }
 
         section div.figure4{
-            margin-top: 15px;
+           
             border: 2px solid #666;
             background-image: url(images/rengoku.jpg);
             background-size: cover;
@@ -57,27 +71,46 @@
         }
 
         .text {
-            border: 2px solid #666;
+     
             color: #fff;
             text-align: center;
-            font-family: sans-serif;
             background-color: #00000080;
+            /*transition: background-color 0.5s, height 0.5s 0.5s;*/
             height: 40px;
-            margin-top: 82%;
+            padding: 12px;
+            height: 25px;
+            margin-top: 191px;
         }
 
+        .text:hover {
+            transition: all 0.2s ease-in;
+            height: 35px;
+        }
+     
 
         .contain1 {
-            border: 2px solid #666;
+            border: 2px dotted #77777788;
+            width: 55%;
+            margin: 0 auto;
+            height: 240px;
+        }
+
+        .contain2 {
+            border: 2px dotted #77777788;
+            width: 55%;
+            margin: 0 auto;
+            height: 240px;
         }
 
         .principal1{
             border: 2px solid #666;
-            background-image: url(images/rengoku.jpg);
+            background-image: url(images/nezuko.jpg);
             background-size: cover;
             display: flex;
+            float: left;
             height: 240px;
             width: 240px;
+           
         }
 
         .principal2{
@@ -85,8 +118,16 @@
             background-image: url(images/uzui.png);
             background-size: cover;
             display: flex;
+            float: left;
             height: 240px;
             width: 240px;
+        }
+
+        p {
+            overflow-y: scroll;
+            right: 0 auto;
+            width: 50%;
+         
         }
     </style>
 </head>
@@ -94,24 +135,26 @@
 
     <header></header>
     <section>
-        <div class="figure1">
-            <div class="text">OPM Season 1</div>
-        </div>
-        <div class="figure2">
-            <div class="text">OPM Season 2</div>
-        </div>
-        <div class="figure3">
-            <div class="text">OPM Season 3</div>
-        </div>
-        <div class="figure4">
-            <div class="text">OPM Season 4</div>
-        </div>
+        <nav>
+            <div class="figure1">
+                <div class="text">OPM Season 1</div>
+            </div>
+            <div class="figure2">
+                <div class="text">OPM Season 2</div>
+            </div>
+            <div class="figure3">
+                <div class="text">OPM Season 3</div>
+            </div>
+            <div class="figure4">
+                <div class="text">OPM Season 4</div>
+            </div>
+        </nav>
     </section>
 
     <section>
         <div class="contain1">
             <div class="principal1"></div>
-                <h3>RENGOKU</h3>
+                <h3>NEZUKO</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque corrupti ex, repellat, eius autem ipsam nostrum aperiam inventore aut dolorem delectus quae sit explicabo? Labore, debitis facilis? Veritatis, id molestias. </p>
         </div>
     </section>
