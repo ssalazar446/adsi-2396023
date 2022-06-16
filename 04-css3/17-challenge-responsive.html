@@ -29,13 +29,19 @@
             width: 55%;
             margin: 0 auto;
             padding: 10px 0px;
+            justify-content: space-between;
+            margin-bottom: 40px;
         }
+
+        
         section div.figure1{
           
             border: 2px solid #666;
             background-image: url(images/tanjiro.png.opdownload);
             background-size: cover;
             display: inline-block;
+            margin-left: 8px;
+            margin-bottom: 5px;
             height: 240px;
             width: 240px;
         }
@@ -46,6 +52,8 @@
             background-image: url(images/nezuko.jpg);
             background-size: cover;
             display: inline-block;
+            margin-left: 8px;
+            margin-bottom: 5px;
             height: 240px;
             width: 240px;
         }
@@ -56,6 +64,8 @@
             background-image: url(images/uzui.png);
             background-size: cover;
             display: inline-block;
+            margin-left: 8px;
+            margin-bottom: 5px;
             height: 240px;
             width: 240px;
         }
@@ -66,6 +76,8 @@
             background-image: url(images/rengoku.jpg);
             background-size: cover;
             display: inline-block;
+            margin-left: 8px;
+            margin-bottom: 5px;
             height: 240px;
             width: 240px;
         }
@@ -75,7 +87,6 @@
             color: #fff;
             text-align: center;
             background-color: #00000080;
-            /*transition: background-color 0.5s, height 0.5s 0.5s;*/
             height: 40px;
             padding: 12px;
             height: 25px;
@@ -83,7 +94,6 @@
         }
 
         .text:hover {
-            transition: all 0.2s ease-in;
             height: 35px;
         }
      
@@ -93,6 +103,8 @@
             width: 55%;
             margin: 0 auto;
             height: 240px;
+            margin-bottom: 40px;
+      
         }
 
         .contain2 {
@@ -106,8 +118,7 @@
             border: 2px solid #666;
             background-image: url(images/nezuko.jpg);
             background-size: cover;
-            display: flex;
-            float: left;
+            float: left;         
             height: 240px;
             width: 240px;
            
@@ -123,11 +134,134 @@
             width: 240px;
         }
 
-        p {
-            overflow-y: scroll;
-            right: 0 auto;
+        h3 {
+            padding: 10px;
+            margin: 0 auto;
             width: 50%;
+            display: inline-block;
+        }
+
+        p {
+            border: 2px solid red;
+            padding: 20px;
+            width: 550px;
+            height: 120px;
+            display: inline-block;
+
          
+        }
+
+        @media(max-width: 1000px){
+            nav{
+                width: 480px;
+                text-align: center;
+                margin: 0 auto;
+            }
+
+        }
+
+        @media (max-width:975px){
+            nav div.figure1{
+                margin-top: 7px;
+                margin-bottom: 20px;
+                transform: scale(1.1);
+                text-align: center;
+            }
+
+        }
+        @media (max-width:975px){
+            nav div.figure2{
+                margin-top: 7px;
+                margin-bottom: 20px;
+                transform: scale(1.1);
+                text-align: center;
+            }
+
+        }
+        @media (max-width:975px){
+            nav div.figure3{
+                margin-top: 7px;
+                margin-bottom: 20px;
+                transform: scale(1.1);
+                text-align: center;
+            }
+
+        }
+        @media (max-width:975px){
+            nav div.figure4{
+                margin-top: 7px;
+                transform: scale(1.1);
+                text-align: center;
+            }
+
+        }
+
+        @media (max-width:975px){
+            section div.contain1{
+                margin-top: 7px;
+                height: 30%;
+                text-align: center;
+                width: 480px;
+                margin: 0 auto;
+            }
+
+        }
+        @media (max-width:975px){
+            section div.contain2{
+                margin-top: 7px;
+                height: 30%;
+                text-align: center;
+                
+                width: 480px;
+                margin: 0 auto;
+            }
+
+        }
+
+        @media (max-width:969px){
+            section div.principal1{
+                margin-top: 30px;
+                margin-bottom: 20px;
+                width: 100%;
+                text-align: center;
+                float: none;
+                margin: 0 auto;
+            }
+
+        }
+
+        @media (max-width:975px){
+            section div.principal2{
+                margin-top: 30px;
+                margin-bottom: 20px;
+                width: 100%;
+                text-align: center;
+                margin: 0 auto;
+            }
+
+        }
+
+        @media (max-width:1200px){
+            p{
+                margin-bottom: 20px;
+                width: 250px;
+                overflow-y: scroll;
+                height: 50px;
+                text-align: center;
+            }
+
+        }
+
+    
+        @media (max-width:975px){
+            p{
+                margin-bottom: 20px;
+                width: 350px;
+                overflow-y: scroll;
+                height: 50px;
+                text-align: center;
+            }
+
         }
     </style>
 </head>
