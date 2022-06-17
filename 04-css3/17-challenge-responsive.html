@@ -26,7 +26,7 @@
 
         nav {
             border: 2px solid blue;
-            width: 55%;
+            width: 1050px;
             margin: 0 auto;
             padding: 10px 0px;
             justify-content: space-between;
@@ -94,13 +94,13 @@
         }
 
         .text:hover {
-            height: 35px;
+            transform: scale(1.1);
         }
      
 
         .contain1 {
             border: 2px dotted #77777788;
-            width: 55%;
+            width: 1050px;
             margin: 0 auto;
             height: 240px;
             margin-bottom: 40px;
@@ -109,7 +109,7 @@
 
         .contain2 {
             border: 2px dotted #77777788;
-            width: 55%;
+            width: 1050px;
             margin: 0 auto;
             height: 240px;
         }
@@ -153,14 +153,22 @@
 
         @media(max-width: 1000px){
             nav{
-                width: 480px;
+                width: 544px;
+                text-align: center;
+                margin: 0 auto;
+            }
+
+        }
+        @media(max-width: 720px){
+            nav{
+                width: 390px;
                 text-align: center;
                 margin: 0 auto;
             }
 
         }
 
-        @media (max-width:975px){
+        @media (max-width:720px){
             nav div.figure1{
                 margin-top: 7px;
                 margin-bottom: 20px;
@@ -169,7 +177,7 @@
             }
 
         }
-        @media (max-width:975px){
+        @media (max-width:720px){
             nav div.figure2{
                 margin-top: 7px;
                 margin-bottom: 20px;
@@ -178,7 +186,7 @@
             }
 
         }
-        @media (max-width:975px){
+        @media (max-width:720px){
             nav div.figure3{
                 margin-top: 7px;
                 margin-bottom: 20px;
@@ -187,7 +195,7 @@
             }
 
         }
-        @media (max-width:975px){
+        @media (max-width:720px){
             nav div.figure4{
                 margin-top: 7px;
                 transform: scale(1.1);
@@ -196,7 +204,7 @@
 
         }
 
-        @media (max-width:975px){
+        @media (max-width:1000px){
             section div.contain1{
                 margin-top: 7px;
                 height: 30%;
@@ -206,19 +214,18 @@
             }
 
         }
-        @media (max-width:975px){
+        @media (max-width:1000px){
             section div.contain2{
                 margin-top: 7px;
                 height: 30%;
                 text-align: center;
-                
                 width: 480px;
                 margin: 0 auto;
             }
 
         }
 
-        @media (max-width:969px){
+        @media (max-width:1000px){
             section div.principal1{
                 margin-top: 30px;
                 margin-bottom: 20px;
@@ -230,7 +237,7 @@
 
         }
 
-        @media (max-width:975px){
+        @media (max-width:1000px){
             section div.principal2{
                 margin-top: 30px;
                 margin-bottom: 20px;
@@ -241,12 +248,12 @@
 
         }
 
-        @media (max-width:1200px){
+        @media (max-width:1000px){
             p{
                 margin-bottom: 20px;
                 width: 250px;
                 overflow-y: scroll;
-                height: 50px;
+                height: 80px;
                 text-align: center;
             }
 
@@ -263,6 +270,8 @@
             }
 
         }
+
+      
     </style>
 </head>
 <body>
