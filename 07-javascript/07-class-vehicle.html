@@ -30,9 +30,10 @@
             cursor: pointer;
             height: 68px;
             position: absolute;
-            top: -72px;
-            right: 20px;
-            width: 62px;
+            top: -66px;
+            right: 14px;
+            width: 68px;
+            height: 68px;
             transition: transform 0.2s ease-in;
         }
 
@@ -131,7 +132,7 @@
             background: url(images/vehicle/btn-next.svg);
         }
         div.methods {
-            margin: 40px auto 0 auto;
+            margin: 50px auto 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -140,13 +141,68 @@
         }
         div.methods button {
             border: none;
-            height: 66px;
-            width: 62px;
+            width: 66px;
+            height: 56px;
             transition: transform 0.2s ease-in;
         }
         div.methods button:is(:hover) {
             transform: scale(0.9);
         }
+
+        div.methods button.on {
+            background: url(images/vehicle/btn-on.svg) no-repeat center;
+         
+            
+        }
+        div.methods button.fw {
+            background: url(images/vehicle/btn-for.svg) no-repeat center;
+            
+            
+        }
+        div.methods button.stop {
+            background: url(images/vehicle/btn-stop.svg) no-repeat center;
+          
+
+            
+        }
+        div.methods button.bw {
+            background: url(images/vehicle/btn-rev.svg) no-repeat center;
+            
+            
+        }
+        div.methods button.off {
+            background: url(images/vehicle/btn-off.svg) no-repeat center;
+            
+        }
+
+        /*Actives*/
+
+        div.methods button.on.active {
+            background: url(images/vehicle/btn-on1.svg) no-repeat center;
+         
+            
+        }
+        div.methods button.fw.active {
+            background: url(images/vehicle/btn-for1.svg) no-repeat center;
+            
+            
+        }
+        div.methods button.stop.active {
+            background: url(images/vehicle/btn-stop1.svg) no-repeat center;
+          
+
+            
+        }
+        div.methods button.bw.active {
+            background: url(images/vehicle/btn-rev1.svg) no-repeat center;
+            
+            
+        }
+        div.methods button.off.active {
+            background: url(images/vehicle/btn-off1.svg) no-repeat center;
+            
+        }
+
     </style>
 </head>
 <body>
@@ -167,10 +223,10 @@
             <button class="btn__dark"></button>
             <h2 class="subtitle1">Attributes:</h2>
             <div class="attributes">
-                <div class="brand">Volkwasgen</div>
-                <div class="refer">Beatle</div>
-                <div class="model">1980</div>
-                <div class="color">Red</div>
+                <div class="brand"></div>
+                <div class="refer"></div>
+                <div class="model"></div>
+                <div class="color"></div>
             </div>
             <figure class="landscape">
                 <button class="prev"></button>
@@ -183,7 +239,7 @@
                 <button class="fw"></button>
                 <button class="stop"></button>
                 <button class="bw"></button>
-                <button class="off"></button>
+                <button class="off active"></button>
             </div>
         </section>
         
@@ -191,6 +247,22 @@
     </main>
 
     <script>
+        const btn_on    = document.querySelector('.on')
+        const btn_fw    = document.querySelector('.fw')
+        const btn_stop  = document.querySelector('.stop')
+        const btn_bw    = document.querySelector('.bw')
+        const btn_off   = document.querySelector('.off')
+        const btns_methods = document.querySelectorAll('.methods button')
+        
+        const e_brand = document.querySelector('.brand')
+        const e_refer = document.querySelector('.refer')
+        const e_model = document.querySelector('.model')
+        const e_color = document.querySelector('.color')
+        var index_attr = 0
+
+        const btn_prev = document.querySelector('.prev')
+        const btn_next = document.querySelector('.next')
+
         const vehicles = [
             {
                 brand : 'Toyota',
@@ -234,17 +306,76 @@
             }
 
             getInfo() {
-                return `The brand is: ${this.brand}`
+                //return `The brand is: ${this.brand}`
+                e_brand.textContent = this.brand
+                e_refer.textContent = this.refer
+                e_model.textContent = this.model
+                e_color.textContent = this.color
             }
         }
 
-        const vh = new Vehicle(vehicles[1].brand,
-                               vehicles[1].refer,
-                               vehicles[1].model,
-                               vehicles[1].color,
-                               vehicles[1].image)
-        console.log(vh)
-        console.log(vh.getInfo())
+        //Actions
+        btn_on.addEventListener('click', (event) => {
+            removeActives()
+            btn_on.classList.add('active')
+        })
+
+        btn_fw.addEventListener('click', (event) => {
+            removeActives()
+            btn_fw.classList.add('active')
+        })
+
+        btn_stop.addEventListener('click', (event) => {
+            removeActives()
+            btn_stop.classList.add('active')
+        })
+
+        btn_bw.addEventListener('click', (event) => {
+            removeActives()
+            btn_bw.classList.add('active')
+        })
+
+        btn_off.addEventListener('click', (event) => {
+            removeActives()
+            btn_off.classList.add('active')
+        })
+
+        btn_prev.addEventListener('click', (event) => {
+            if(index_attr > 0) {
+                index_attr--
+                showAttributes()
+            }
+        })
+
+        btn_next.addEventListener('click', (event) => {
+            if(index_attr < vehicles.length-1) {
+                index_attr++
+                showAttributes()
+            }
+        })
+
+        //Functions
+        function removeActives() {
+            btns_methods.forEach(element => {
+                element.classList.remove('active')
+            })
+        }
+
+        
+        // New Vehicle
+        function showAttributes () {
+            let vh = new Vehicle(  vehicles[index_attr].brand,
+                                   vehicles[index_attr].refer,
+                                   vehicles[index_attr].model,
+                                   vehicles[index_attr].color,
+                                   vehicles[index_attr].image)
+        // Access to Methods
+        vh.getInfo()
+
+        }
+        showAttributes()
+        //console.log(vh)
+        //console.log(vh.getInfo())
     </script>
 </body>
 </html>
