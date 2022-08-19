@@ -39,6 +39,61 @@
         section button.btn__dark:is(:hover) {
             transform: scale(0.9);
         }
+        main h2 {
+            border: none;
+            text-align: left;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            padding-bottom: 0;
+            position: absolute;
+            left: 24px;
+            color: #4F6D7A;
+
+        }
+
+        main h2.subtitle1 {
+            top: -20px;
+        }
+        main h2.subtitle2 {
+            top: 440px;
+        }
+
+        div.attributes {
+            color: #4F6D7A;
+            margin: 10px auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            width: 360px;
+        }
+
+        div.attributes div {
+            width: 173px;
+            height: 68px;
+        }
+
+        div.attributes div.brand {
+            background: url(images/vehicle/brand.svg);
+            border-radius: 16px;
+        }
+
+        div.attributes div.refer {
+            background: url(images/vehicle/reference.svg);
+            border-radius: 16px;
+        }
+
+        div.attributes div.model {
+            background: url(images/vehicle/model.svg);
+            border-radius: 16px;
+        }
+
+        div.attributes div.color {
+            background: url(images/vehicle/color.svg);
+            border-radius: 16px;
+        }
+
     </style>
 </head>
 <body>
@@ -53,10 +108,22 @@
                 <small>class</small>Vehicle
                 
         </h1>
+        
         </header>
         <section>
             <button class="btn__dark"></button>
+            <h2 class="subtitle1">Attributes:</h2>
+            <div class="attributes">
+                <div class="brand">Volkwasgen</div>
+                <div class="refer">Beatle</div>
+                <div class="model">1980</div>
+                <div class="color">Red</div>
+            </div>
+            
+
+            <h2 class="subtitle2">Methods:</h2>
         </section>
+        
 
     </main>
 
