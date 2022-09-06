@@ -337,6 +337,11 @@
         figure.parallax.play.stop div.layer3{
             animation-play-state: paused;
         }
+        figure.parallax.reverse div.layer1,
+        figure.parallax.reverse div.layer2,
+        figure.parallax.reverse div.layer3{
+            animation-direction: reverse;
+        }
     </style>
 </head>
 <body>
@@ -467,6 +472,14 @@
             }
             static goForward(){
                     parallax.classList.add('play')
+                    parallax.classList.remove('reverse')
+                    parallax.classList.remove('stop')
+                    moveon = true
+            }
+
+            static goBackward() {
+                    parallax.classList.add('play')
+                    parallax.classList.add('reverse')
                     parallax.classList.remove('stop')
                     moveon = true
             }
@@ -505,8 +518,12 @@
             }
         })
         btn_bw.addEventListener('click', (event) => {
-            removeActives()
-            btn_bw.classList.add('active')
+            if (engine && !moveon) {
+                removeActives()
+                Vehicle.goBackward()
+                btn_bw.classList.add('active')
+            }
+            
         })
         btn_off.addEventListener('click', (event) => {
             if(engine && !moveon) {
