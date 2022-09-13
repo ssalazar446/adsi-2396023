@@ -30,11 +30,12 @@ header h1 {
 header h1 a:link,
 header h1 a:visited {
     display: flex;
-    color: #f1ce3f;
+    
     position: absolute;
     left: 1rem;
     text-decoration: none;
     transition: transform 0.2s ease-in;
+    color: #f1ce3f;
 }
 header h1 a:hover {
     transform: translateX(-4px);
