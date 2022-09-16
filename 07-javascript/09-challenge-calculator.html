@@ -266,6 +266,7 @@
     const result = document.querySelector('.igual')
     const clear = document.querySelector('.clear')
     const back = document.querySelector('.back')
+    const resultado = document.querySelector('.result')
 
     // Numbers & Operators
     const nums = document.querySelectorAll('button[data-num]')
@@ -308,6 +309,9 @@
         if(isNaN(oper.textContent.slice(-1))){
             operStatus = false
         }
+    })
+    result.addEventListener('click', () => {
+        oper.value = eval (oper.value)
     })
 
     document.addEventListener('keyup', (evt) => {
@@ -352,6 +356,21 @@
             case 57:
             case 105:
                 oper.textContent += 9
+                break;
+            case 107:
+                oper.textContent += '+'
+                break;
+            case 109:
+                oper.textContent += '-'
+                break;
+            case 106:
+                oper.textContent += '*'
+                break;
+            case 111:
+                oper.textContent += '/'
+                break;
+            case 13:
+                result()
                 break;
         }
         
