@@ -298,6 +298,7 @@
 
     clear.addEventListener('click', () => {
         oper.textContent = ''
+        resultado.textContent = ''
     })
 
     mode.addEventListener('click', (e) => {
@@ -372,6 +373,13 @@
             case 13:
             resultado.textContent = eval (oper.textContent)
                 break;
+            case 46:
+            oper.textContent = ''
+            resultado.textContent = ''
+                break;
+            case 8:
+            oper.textContent =oper.textContent.slice(0, -1)
+            break;
         }
         
     })
